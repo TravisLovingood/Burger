@@ -1,4 +1,4 @@
-/
+
 const mysql = require("mysql");
 
 var connection = mysql.createConnection({
@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   
     user: "root",
   
-    password: "Disco500!",
+    password: "",
     database: "burger_db"
 });
 

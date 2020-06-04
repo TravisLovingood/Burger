@@ -1,4 +1,5 @@
 var express = require("express");
+var mysql = require("mysql");
 
 // var PORT = process.env.PORT || 8080;
 
@@ -13,6 +14,10 @@ var express = require("express");
 // init();
 
 // notes-->
+
+
+// Db Setup step 2
+
 
 // ### Reminder: Submission on BCS
 

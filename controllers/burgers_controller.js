@@ -1,5 +1,4 @@
-// 3. Inside the `burgers_controller.js` file, import the following:
-
+//  import the following:
 //    * Express
 //    * `burger.js`
 

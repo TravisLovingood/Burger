@@ -11,3 +11,14 @@
 --    * Now insert the entries you defined in `seeds.sql` by running the file: `source seeds.sql`.
 
 --    * Close out of the MySQL command line tool: `exit`.
+
+USE burgers_db;
+
+INSERT into burgers;
+-- --------old homework stuff----->
+--     (name)
+-- VALUES  
+--     ("Sales"),
+--     ('Enginerring'),
+--     ('Finance'),
+--     ('Legal');

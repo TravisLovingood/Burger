@@ -14,11 +14,7 @@
 
 USE burgers_db;
 
-INSERT into burgers;
--- --------old homework stuff----->
---     (name)
--- VALUES  
---     ("Sales"),
---     ('Enginerring'),
---     ('Finance'),
---     ('Legal');
+INSERT INTO burgers (name) VALUES ();
+INSERT INTO burgers (name) VALUES ();
+INSERT INTO burgers (name) VALUES ();
+

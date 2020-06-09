@@ -8,11 +8,11 @@ var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
     burger.all(function(data) {
-      var newObject = {
+      var hbsObject = {
         burger: data
       };
-      console.log();
-      res.render("index", newObject);
+      console.log(hbsObject);
+      res.render("index", hbsObject);
     });
   });
 //   add new ids to "" and  req.body.

@@ -2,8 +2,6 @@
 // commands in the controllers. These are the methods you will need to use in order to
 // retrieve and store data in your database.
 
-// Check out Act 13-17
-
 var connection = require("./connection.js");
 
 // ["?", "?", "?"]
@@ -42,7 +40,7 @@ function printQuestionMarks(num) {
       var queryString="INSERT INTO "+table;
 
       queryString+=" (";
-      queryString+=cols.toString;
+      queryString+=cols.toString();
       queryString+=") ";
       queryString+= "VALUES (";
       queryString+= printQuestionMarks(vals.length);
@@ -55,11 +53,11 @@ function printQuestionMarks(num) {
         }
         cb(result);
       });
-    }
+    },
 
 // objColVals would be the colums and values you wanna update
 // ex: {name: cheeseburger, ready:true}
-    update: function(table,objColVals,condition,cb){
+    update: function(table,objColVals,condition,cb) {
       var queryString="UPDATE "+table;
 
       queryString+=" SET ";

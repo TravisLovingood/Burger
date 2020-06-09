@@ -1,8 +1,11 @@
      {{!-- * Setup the `index.handlebars` to have the 
      template that Handlebars can render onto. --}}
 
-     {{!-- add image --}}
 <h1>Eat-Da-Burgers!</h1>
+     {{!-- add image --}}
+<div>
+  <img src="/assets/img/burger.png" alt="burger" width="200px" height="200px" class="z-depth-3"></img>
+</div>
 
 <ul>
   {{#each burgers}}
@@ -15,7 +18,7 @@
 <h2>Burgers to Devour!</h2>
 
 <ul>
-  {{#each cats}}
+  {{#each burgers}}
     {{#if devour}}
       {{> burgers/burger-block devour=false}}
     {{/if}}

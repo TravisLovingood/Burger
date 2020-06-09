@@ -1,1 +1,27 @@
 /* Add style */
+body {
+    background: #fac177;
+}
+
+h1 {
+    color: #fa0303 ;
+    font-weight: bold;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+}
+
+
+  
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+}
+  
+.form-group {
+    margin-bottom: 5px;
+}

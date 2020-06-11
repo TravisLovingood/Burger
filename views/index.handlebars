@@ -7,20 +7,22 @@
   <img src="/assets/img/burger.png" alt="burger" width="200px" height="200px" class="z-depth-3"></img>
 </div>
 
+<h2>Burgers to devour.</h2>
+
 <ul>
   {{#each burgers}}
-    {{#unless devour}}
+    {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers to Devour!</h2>
+<h2>Burgers Devoured!</h2>
 
 <ul>
   {{#each burgers}}
-    {{#if devour}}
-      {{> burgers/burger-block devour=false}}
+    {{#if devoured}}
+      {{> burgers/burger-block devour}}
     {{/if}}
   {{/each}}
 </ul>
@@ -28,21 +30,19 @@
 {{!-- * Create a button in `index.handlebars` that will 
 submit the user input into the database. --}}
 
-<h2>Add Burgers?</h2>
+<h2>Add a Burger?</h2>
 <form class="create-form">
+
+  <div>
+    What Burger do you want?
+  </div>
+
+  <br></br>
 
   <div class="form-group">
     <label for="newBurger">Burger Name:</label>
     <input type="text" id="newBurger" name="name">
   </div>
 
-
-  <div class="form-group">
-    <label for="devour">Devour?</label><br>
-    <input type="radio" name="devour" value="1" checked> Devour!<br>
-    <input type="radio" name="devour" value="0"> Don't Devour...
-  </div>
-  </div>
-
-  <button type="submit">Submit</button>
+  <button type="submit">Add</button>
 </form>

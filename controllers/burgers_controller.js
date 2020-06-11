@@ -15,15 +15,13 @@ router.get("/", function(req, res) {
       res.render("index", hbsObject);
     });
   });
-//   add new ids to "" and  req.body.
-  router.add("/api/burgers", function(req, res) {
+
+  router.post("/api/burgers", function(req, res) {
     burger.create([
       "name", "devour",
-    ], 
-    [
+    ], [
       req.body.name, req.body.devour,
     ], function(result) {
-// Send back the ID
       res.json({ id: result.insertId });
     });
   });
@@ -34,7 +32,7 @@ router.get("/", function(req, res) {
     console.log("condition", condition);
   
     burger.update({
-
+      // devoured: req.body.devoured -----------------------------------------!
     }, condition, function(result) {
       if (result.changedRows == 0) {
 
@@ -43,7 +41,7 @@ router.get("/", function(req, res) {
         res.status(200).end();
       }
     });
-router.delete("/api/burgers/:id", function(req, res) {
+  router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     burger.delete(condition, function(result) {
@@ -55,7 +53,7 @@ router.delete("/api/burgers/:id", function(req, res) {
       }
     });
   });
-  });
+});
 
 
 // Export routes for server.js to use.

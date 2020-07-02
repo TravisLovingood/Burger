@@ -21,7 +21,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 In your terminal enter npm install.
 
-Thne enter npm start.
+Then enter npm start.
 
 ## License
 

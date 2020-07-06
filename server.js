@@ -1,7 +1,6 @@
 var express = require("express");
 // var http = require("http");
 var PORT = process.env.PORT || 8080;
-
 var app = express();
 
 app.use(express.static("public"));
@@ -19,5 +18,6 @@ var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 app.listen(PORT, function() {
+
     console.log("Server listening on: http://localhost:" + PORT);
 });

@@ -1,57 +1,75 @@
+ /* Add style */
 body {
-    width: 99%;
-    height: 900px;
     background-color: #fc6;
+    padding: 100px;
   }
   
-  #top-bar {
-    margin-top: 28px;
+#top-bar {
+    margin-top: 20px;
   }
+
   
-  
-  @media (min-width: 1200px) {
-    .container {
-      width: 990px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 990px;
-    }
-  }
-  
-  .enter_section {
+
+.enter_section {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
   }
   
-  #enter_text {
-    width: 400px;
-    height: 80px;
+#enter_text {
+    width: 300px;
+    height: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    font-size: 38px;
+    font-size: 20px;
   }
   
-  .task {
+.task {
     border-color: black;
     border-style: solid;
     border-width: 3px;
   }
   
-  .button-size {
+.button-size {
     padding-bottom: 20px;
   }
   
-  #text-enter-button {
-    margin-top: 10px;
+#text-enter-button {
+    margin-top: 20px;
     margin-bottom: 18px;
   }
   
-  h1 {
-    color: #f30;
+h1 {
+    color: #fa0303 ;
+    font-weight: bold;
+  }
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  } 
+
+
+.form-group {
+    margin-bottom: 5px;
+  }
+
+@media (min-width: 1200px) {
+    .container {
+      width: 990px;
+    }
   }
   
+@media (min-width: 992px) {
+    .container {
+      width: 990px;
+    }
+  }

@@ -11,12 +11,14 @@ router.get("/", function(req, res) {
 router.get("/burgers", function(req, res) {
 
   burger.all(function(burgerData) {
+    console.log(burgerData)
     res.render("index", { burger_data: burgerData });
   });
 });
 
 router.post("/burgers/create", function(req, res) {
-  burger.create(req.body.name, req.body.devour,
+  console.log(req.body)
+  burger.create(req.body.burger_name,
     function(result) {
     console.log(result);
     res.redirect("/");

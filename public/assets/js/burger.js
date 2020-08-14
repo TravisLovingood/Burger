@@ -1,5 +1,6 @@
 $(function() {
     $(".change-devour").on("click", function(event) {
+      event.preventDefault();
       var id = $(this).data("id");
       var newDevour = $(this).data("newdevour");
   
@@ -8,7 +9,7 @@ $(function() {
       };
   
       // Send the PUT request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/burgers/" + id, {
         type: "PUT",
         data: newDevourState
       }).then(
@@ -30,7 +31,7 @@ $(function() {
       };
   
       // Send the POST request.
-      $.ajax("/api/burgers", {
+      $.ajax("/burgers", {
         type: "POST",
         data: newBurger
       }).then(
@@ -46,7 +47,7 @@ $(function() {
       var id = $(this).data("id");
   
       // Send the DELETE request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/burgers/" + id, {
         type: "DELETE"
       }).then(
         function() {

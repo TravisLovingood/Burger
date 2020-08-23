@@ -10,9 +10,9 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 * [Usage](#usage)
 
-* [License](#license)
-
 * [Installation](#installation)
+
+* [License](#license)
 
 * [Questions](#questions)
 
@@ -24,6 +24,10 @@ Just go to [Eat Da Burger](https://nameless-brook-84137.herokuapp.com/) start a 
 ## Installation
 
 Open a new terminal and run 'npm install'.
+
+## License
+
+This project has no License.
   
 ## Questions
 

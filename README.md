@@ -12,27 +12,21 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 * [License](#license)
 
-* [Contributing](#contributing)
+* [Installation](#installation)
 
 * [Questions](#questions)
 
 
 ## Usage
 
-In your terminal enter npm install.
+Just go to [Eat Da Burger](https://nameless-brook-84137.herokuapp.com/) start a note, add a title, a body, save, and enjoy!
 
-Then enter npm start.
+## Installation
 
-## License
-
-This project is licensed under the Oh Yeah License.
+Open a new terminal and run 'npm install'.
   
-## Contributing
-
-Travis Lovingood
-
 ## Questions
 
+If you have any questions about the repo, open an issue or contact [Eat Da Burger](https://github.com/TravisLovingood/Burger) directly at undefined.
 
-If you have any questions about the repo, open an issue or contact [github.com/TravisLovingood](https://github.com/TravisLovingood) directly at undefined.
-
+Also please take a look at [My Portfolio](https://travislovingood.github.io/Portfolio/).
